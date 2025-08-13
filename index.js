@@ -14,11 +14,10 @@ function createLoginTracker(userInfo) {
       }
       else {
         console.log(`Attempt ${attemptCount}: Login Failed`);
-        console.log(passwordAttempt);
       }
     }
   }
-  attempt();
+  attempt(userInput);
   //console.log(userInfo.username);
   //console.log(userInfo.password);
 }
@@ -28,7 +27,7 @@ const jamieab98 = {
   password: "09091998"
 };
 
-
+let userInput = "0909198";
 createLoginTracker(jamieab98);
 
 
