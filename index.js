@@ -1,4 +1,6 @@
-
+function createLoginTracker() {
+  
+}
 
 
 module.exports = {
