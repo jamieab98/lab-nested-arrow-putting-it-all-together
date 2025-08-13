@@ -1,6 +1,10 @@
 function createLoginTracker(userInfo) {
   const attemptCount = 0;
   console.log(attemptCount);
+  const tracker = (passwordAttempt) => {
+    console.log("tracker return here");
+  }
+  tracker();
   //console.log(userInfo.username);
   //console.log(userInfo.password);
 }
