@@ -1,7 +1,7 @@
 function createLoginTracker(userInfo) {
-  let attemptCount = 2;
-  console.log(attemptCount);
-  const tracker = (passwordAttempt) => {
+  let attemptCount = 0;
+  //console.log(attemptCount);
+  const attempt = (passwordAttempt) => {
     //console.log("tracker return here");
     attemptCount += 1;
     console.log(attemptCount);
@@ -14,19 +14,22 @@ function createLoginTracker(userInfo) {
       }
       else {
         console.log(`Attempt ${attemptCount}: Login Failed`);
+        console.log(passwordAttempt);
       }
     }
   }
-  tracker();
+  attempt();
   //console.log(userInfo.username);
   //console.log(userInfo.password);
 }
 
-const jamie = {
+const jamieab98 = {
   username: "jamieab98", 
   password: "09091998"
 };
-createLoginTracker(jamie);
+
+
+createLoginTracker(jamieab98);
 
 
 module.exports = {
